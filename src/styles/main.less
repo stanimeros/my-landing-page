@@ -143,20 +143,46 @@ h4{
 }
 
 a {
-  opacity: 80%;
-  transition: ease-in-out 0.25s;
   -webkit-tap-highlight-color: transparent;
-  @media only screen and (min-width:769px){
-    &:hover{
-      cursor: pointer;
-      opacity: 100%;
-    } 
+
+  &:hover{
+    cursor: pointer;
   }
 }
 
 a:link, a:visited, a:active{
   color: var(--clr-text);
   text-decoration: none;
+}
+
+a.link{
+  position: relative;
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: -.4em;
+    left: 50%;
+    right: 50%;
+    height: 1px;
+    background: currentColor; // system color
+    transition: all ease .2s;
+  } 
+  
+  &:hover:after {
+    left: 0;
+    right: 0;
+    height: 2px;
+  } 
+  
+  &:before {
+    position: absolute;
+    transform: translateX(-100%);
+    left: -10px;
+    color: #eee;
+    opacity: .3;
+    font-weight: 100;
+    font-size: .8em;
+  }
 }
 
 .input{
@@ -189,7 +215,7 @@ img{
 
 .button{
   position: relative;
-  padding: 10px 56px; //TO FIT LOADER 16 + 24 + 16
+  padding: 10px 20px;
   color: var(--clr-button-text);
   background-color: var(--clr-button);
   margin: 10px;
@@ -231,19 +257,72 @@ a.secondary-button{
   }
 }
 
+.row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 /* HEADER 
 ==========================================================*/
 
 header{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  > ul {
-    display: flex;
-    gap: 30px;
+  ul {
+    gap: 20px;
+    
+    li{
+      list-style-type: none;
+    }
+
+    li:not(:last-child)::after {
+      content: "|";
+      padding-left: 20px;
+    }
+  }
+}
+
+/* FOOTER 
+==========================================================*/
+
+footer{
+  margin: 40px;
+
+  ul {
+    gap: 10px;
+    
     li{
       list-style-type: none;
     }
   }
+  
+  .info-bar{
+    z-index: 0;
+    font-size: @--fs-16px;
+    justify-content: space-around;
+    position: relative;
+
+    .box{
+      position: absolute;
+      right: 0;
+      z-index: -1;
+      background-color: #f8ca8b;
+      border-radius: 20px;
+      width: 250px;
+      height: 150px;
+    }
+  }
+
+  .copyright-bar{
+    opacity: 0.75;
+    margin-top: 100px;
+    font-size: @--fs-14px;
+  }
+}
+
+
+/* MAIN CONTENT 
+==========================================================*/
+main{
+  min-height: 35svh;
 }
 

@@ -1,9 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser } from '@fortawesome/free-solid-svg-icons';
-import { faGlobe } from '@fortawesome/free-solid-svg-icons';
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import Translator from './Translator';
 
 function Header({GlobalState}) {
@@ -33,24 +29,24 @@ function Header({GlobalState}) {
   }, [language]);
 
   return (
-    <header>
+    <header className='row'>
       <img
 				src={`/logos/logo-transparent.png`}
 				width={100}
 			/>
-			<ul>
+			<ul className='row'>
 				<li>
-					<Link to="/">
+					<Link className='link' to="/">
 						<Translator code={language} value="Home"/>
 					</Link>
 				</li>
 				<li>
-					<Link to="/portfolio">
+					<Link className='link' to="/portfolio">
 						<Translator code={language} value="Portfolio"/>
 					</Link>
 				</li>
 				<li>
-					<Link to="/contact">
+					<Link className='link' to="/contact">
 						<Translator code={language} value="Contact"/>
 					</Link>
 				</li>

@@ -6,10 +6,11 @@ import Header from './widgets/Header';
 import Footer from './widgets/Footer';
 
 import Home from './pages/Home';
-// import Contact from './pages/Contact';
-// import PrivacyPolicy from './pages/Privacy';
-// import TermsAndConditions from './pages/Terms';
-// import Page404 from './pages/Page404';
+import Portfolio from './pages/Portfolio';
+import Contact from './pages/Contact';
+import PrivacyPolicy from './pages/Privacy';
+import TermsAndConditions from './pages/Terms';
+import Page404 from './pages/Page404';
 
 function App() {
   const [language, setLanguage] = useState(localStorage.getItem('selectedLanguage') || 'EN'); 
@@ -56,12 +57,13 @@ function App() {
       </HelmetProvider>
       <Header GlobalState={GlobalState}/>
       <Routes>
-        <Route exact path="/" element={<Home GlobalState={GlobalState} />} />
-        {/* <Route path="contact" element={<Contact GlobalState={GlobalState} />} />
+        <Route exact path="/" element={<Home GlobalState={GlobalState} />} />\        <Route path="contact" element={<Contact GlobalState={GlobalState} />} />
+        <Route path="portfolio" element={<Portfolio GlobalState={GlobalState} />} />
+        <Route path="contact" element={<Contact GlobalState={GlobalState} />} />
         <Route path="terms-and-conditions" element={<TermsAndConditions GlobalState={GlobalState} />} />
         <Route path="privacy-policy" element={<PrivacyPolicy GlobalState={GlobalState} />} />
         <Route path="404" element={<Page404 GlobalState={GlobalState} />} />
-        <Route path="*" element={<Page404 GlobalState={GlobalState} />} /> */}
+        <Route path="*" element={<Page404 GlobalState={GlobalState} />} />
       </Routes>
       <Footer GlobalState={GlobalState}/>
     </>
