@@ -34,7 +34,30 @@ function Header({GlobalState}) {
 
   return (
     <header>
-      <div>Header</div>
+      <img
+				src={`/logos/logo-transparent.png`}
+				width={100}
+			/>
+			<ul>
+				<li>
+					<Link to="/">
+						<Translator code={language} value="Home"/>
+					</Link>
+				</li>
+				<li>
+					<Link to="/portfolio">
+						<Translator code={language} value="Portfolio"/>
+					</Link>
+				</li>
+				<li>
+					<Link to="/contact">
+						<Translator code={language} value="Contact"/>
+					</Link>
+				</li>
+			</ul>
+			<Link className="button" to="/contact">
+				<Translator code={language} value="Get Started"/>
+			</Link>
     </header>
   )
 }

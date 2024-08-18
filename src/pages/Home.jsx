@@ -11,8 +11,8 @@ function Home({GlobalState}) {
     <>
       <HelmetProvider>
         <Helmet>
-          <title>{Translator({code:language,value:"Home"}).props.children}</title>
-          <meta property="og:title" content={Translator({code:language,value:"Home"}).props.children} />
+          <title>{Translator({code:language,value:"Freelancer Developer"}).props.children}</title>
+          <meta property="og:title" content={Translator({code:language,value:"Freelancer Developer"}).props.children} />
         </Helmet>
       </HelmetProvider>
       <main>
