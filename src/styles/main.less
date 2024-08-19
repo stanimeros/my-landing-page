@@ -52,17 +52,6 @@
 @--fs-15px: 0.938rem;
 @--fs-14px: 0.875rem;
 
-@--clr-background: rgb(30,30,30);
-@--clr-gradient-background: rgb(45,45,45);
-@--clr-linear-gradient: linear-gradient(90deg, rgba(45,45,45,1) 0%, rgba(94,94,94,1) 100%);
-
-@--box-shadow : rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-@--box-shadow-button : rgba(#2d2d2d, 0.3) 0px 1px 2px 0px, rgba(#2d2d2d, 0.15) 0px 2px 6px 2px;
-@--box-shadow-input : rgba(0, 0, 0, 0.15) 0px 2px 8px;
-
-@--outline : 1px solid rgba(0, 0, 0, 0.03);
-@--outline-input : 1px solid rgba(0, 0, 0, 0.04);
-
 :root{
   --clr-text: #eee;
   --clr-primary: #2d2d2d;
@@ -75,6 +64,17 @@
   --clr-secondary-button:#f7fbff;
   --clr-secondary-button-text:#eee;
   --clr-secondary-button-hover:#fff;
+
+  --clr-background: rgb(30,30,30);
+  --clr-gradient-background: rgb(45,45,45);
+  --clr-linear-gradient: linear-gradient(90deg, rgba(45,45,45,1) 0%, rgba(94,94,94,1) 100%);
+
+  --box-shadow : rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  --box-shadow-button : rgba(#2d2d2d, 0.3) 0px 1px 2px 0px, rgba(#2d2d2d, 0.15) 0px 2px 6px 2px;
+  --box-shadow-input : rgba(0, 0, 0, 0.15) 0px 2px 8px;
+
+  --outline : 1px solid rgba(0, 0, 0, 0.03);
+  --outline-input : 1px solid rgba(0, 0, 0, 0.04);
 
   --ff-base: 'GSans', sans-serif;
 }
@@ -102,7 +102,7 @@ body{
   font-size: @--fs-18px;
   font-family: var(--ff-base);
   color: var(--clr-text);
-  background-color: @--clr-background;
+  background-color: var(--clr-background);
 }
 
 #root{
@@ -110,7 +110,7 @@ body{
   padding: 20px;
   min-height: 75svh;
   border-radius: 20px;
-  background: @--clr-linear-gradient;
+  background: var(--clr-linear-gradient);
 }
 
 h1{
@@ -181,10 +181,10 @@ a.link{
   background-color: var(--clr-input);
   margin-top: 10px;
   font-family: "GSans";
-  box-shadow: @--box-shadow-input;
-  -webkit-box-shadow: @--box-shadow-input;
-  -moz-box-shadow: @--box-shadow-input;
-  outline: @--outline-input;
+  box-shadow: var(--box-shadow-input);
+  -webkit-box-shadow: var(--box-shadow-input);
+  -moz-box-shadow: var(--box-shadow-input);
+  outline: var(--outline-input);
   &::selection {
     color: var(--clr-background);
     background: var(--clr-text);
@@ -210,7 +210,7 @@ img{
   transition: ease-in-out 0.25s;
   -webkit-tap-highlight-color: transparent;
   cursor: pointer;
-  box-shadow: @--box-shadow-button;
+  box-shadow: var(--box-shadow-button);
   &:hover{
     background-color: var(--clr-button-hover)
   }
