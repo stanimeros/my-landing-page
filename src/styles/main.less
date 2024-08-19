@@ -53,17 +53,17 @@
 @--fs-14px: 0.875rem;
 
 :root{
-  --clr-text: #eee;
+  --clr-text: #eeeeeec1;
   --clr-primary: #2d2d2d;
   --clr-secondary: #2d2d2d;
 
   --clr-button: #2d2d2d;
-  --clr-button-text:#eee;
+  --clr-button-text:#eeeeeec1;
   --clr-button-hover: #252525;
 
-  --clr-secondary-button:#f7fbff;
-  --clr-secondary-button-text:#eee;
-  --clr-secondary-button-hover:#fff;
+  --clr-secondary-button:#eeeeeec1;
+  --clr-secondary-button-text:#2d2d2d;
+  --clr-secondary-button-hover:#eeeeeec1;
 
   --clr-background: rgb(30,30,30);
   --clr-gradient-background: rgb(45,45,45);
@@ -85,12 +85,10 @@
 }
 
 ::selection {
-  //color: var(--clr-text);
   background: transparent;
 }
 
 ::-moz-selection {
-  //color: var(--clr-text);
   background: transparent;
 }
 
@@ -151,7 +149,7 @@ a.link{
     left: 50%;
     right: 50%;
     height: 1px;
-    background: currentColor; // system color
+    background: var(--clr-text);
     transition: all ease .2s;
   } 
   
@@ -250,16 +248,15 @@ a.secondary-button{
 ==========================================================*/
 
 header{
+  img{
+    opacity: 0.75;
+  }
+
   ul {
     gap: 20px;
     
     li{
       list-style-type: none;
-    }
-
-    li:not(:last-child)::after {
-      content: "|";
-      padding-left: 20px;
     }
   }
 }
@@ -283,6 +280,17 @@ footer{
     font-size: @--fs-16px;
     justify-content: space-around;
     position: relative;
+    
+    .row{
+      gap: 15px;
+
+      .circle-image{
+        width: 70px;
+        height: 70px;
+        background-color: var(--clr-button-text);
+        border-radius: 50%;
+      }
+    }
 
     .box{
       position: absolute;

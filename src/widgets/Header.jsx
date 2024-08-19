@@ -32,7 +32,7 @@ function Header({GlobalState}) {
     <header className='row'>
       <img
 				src={`/logos/logo-white.png`}
-				width={70}
+				width={75}
 			/>
 			<ul className='row'>
 				<li>
@@ -40,11 +40,13 @@ function Header({GlobalState}) {
 						<Translator code={language} value="Home"/>
 					</Link>
 				</li>
+				<div>|</div>
 				<li>
 					<Link className='link' to="/portfolio">
 						<Translator code={language} value="Portfolio"/>
 					</Link>
 				</li>
+				<div>|</div>
 				<li>
 					<Link className='link' to="/contact">
 						<Translator code={language} value="Contact"/>

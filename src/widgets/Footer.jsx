@@ -11,10 +11,7 @@ function Footer({GlobalState}) {
     <footer>
       <div className='info-bar row'>
         <div className='row'>
-          <img
-            src={`/logos/logo.png`}
-            width={100}
-          />
+          <div className='circle-image'></div>
           <div>
             <div>
               <a href="mailto:hello@stanimeros.com">hello@stanimeros.com</a>
