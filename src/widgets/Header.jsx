@@ -31,8 +31,8 @@ function Header({GlobalState}) {
   return (
     <header className='row'>
       <img
-				src={`/logos/logo-transparent.png`}
-				width={100}
+				src={`/logos/logo-white.png`}
+				width={70}
 			/>
 			<ul className='row'>
 				<li>

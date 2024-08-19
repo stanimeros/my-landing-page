@@ -12,15 +12,15 @@ function Footer({GlobalState}) {
       <div className='info-bar row'>
         <div className='row'>
           <img
-            src={`/logos/logo-transparent.png`}
+            src={`/logos/logo.png`}
             width={100}
           />
           <div>
             <div>
-              <a href="mailto:pantelisstanimeros@gmail.com">pantelisstanimeros@gmail.com</a>
+              <a href="mailto:hello@stanimeros.com">hello@stanimeros.com</a>
             </div>
             <div>
-              <a href="tel:+306980911668">(30) 698 091 1668</a>
+              <a href="tel:+306980911668">+30 698 091 1668</a>
             </div>
           </div>
         </div>
@@ -35,14 +35,18 @@ function Footer({GlobalState}) {
           <div>Looking for creating an app?</div>
           <strong>
             <div>
-              <a href="mailto:pantelisstanimeros@gmail.com">pantelisstanimeros@gmail.com</a>
+              <a href="mailto:hello@stanimeros.com">hello@stanimeros.com</a>
             </div>
           </strong>
         </div>
         <div className='box'></div>
       </div>
       <div className='copyright-bar row'>
-        <div>stanimeros.com</div>
+        <div>
+          <Link to="/">
+            <Translator code={language} value="stanimeros.com"/>
+          </Link>
+        </div>
         <div>Copyright © 2024</div>
         <ul className='row'>
           <li>
