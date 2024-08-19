@@ -32,7 +32,7 @@ function Footer({GlobalState}) {
           <div>Looking for creating an app?</div>
           <strong>
             <div>
-              <a href="mailto:hello@stanimeros.com">hello@stanimeros.com</a>
+              <a className='link' href="mailto:hello@stanimeros.com">hello@stanimeros.com</a>
             </div>
           </strong>
         </div>
@@ -40,20 +40,20 @@ function Footer({GlobalState}) {
       </div>
       <div className='copyright-bar row'>
         <div>
-          <Link to="/">
+          <Link className='link' to="/">
             <Translator code={language} value="stanimeros.com"/>
           </Link>
         </div>
         <div>Copyright © 2024</div>
         <ul className='row'>
           <li>
-            <Link to="/privacy-policy">
+            <Link className='link' to="/privacy-policy">
               <Translator code={language} value="Privacy Policy"/>
             </Link>
           </li>
           <div>|</div>
           <li>
-            <Link to="/terms-and-conditions">
+            <Link className='link' to="/terms-and-conditions">
               <Translator code={language} value="Terms & Conditions"/>
             </Link>
           </li>

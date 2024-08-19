@@ -16,7 +16,19 @@ function Terms({GlobalState}) {
         </Helmet>
       </HelmetProvider>
       <main>
-        <div>Terms & Conditions</div>
+        <div>/Our Terms</div>
+        <h1>Terms & Conditions</h1>
+        <br/><br/>
+        <p>
+          <span>
+            Welcome to my freelancer page! By using my services, you agree to follow these Terms and Conditions. These terms outline how you can use my services and the rules you need to follow, including how I handle intellectual property and what to do if there are any issues. I may update these terms occasionally, so please check back from time to time. Continued use of my services means you accept any changes. If you have any questions about these terms, don’t hesitate to contact me at
+          </span>
+          <span> </span>
+          <a className='link' href="mailto:hello@stanimeros.com"> 
+            hello@stanimeros.com
+          </a>
+          <span>.</span>
+        </p>
       </main>
     </>
   )

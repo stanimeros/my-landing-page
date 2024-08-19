@@ -16,7 +16,14 @@ function Portfolio({GlobalState}) {
         </Helmet>
       </HelmetProvider>
       <main>
-        <div>Portfolio Page</div>
+        <div>/Portfolio</div>
+        <h1>This is my Portfolio</h1>
+        <div className='grid'>
+          <div className='grid-item'></div>
+          <div className='grid-item'></div>
+          <div className='grid-item'></div>
+          <div className='grid-item'></div>
+        </div>
       </main>
     </>
   )
