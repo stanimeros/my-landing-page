@@ -122,15 +122,17 @@ function Contact({GlobalState}) {
             </div>
             <div className='row'>
               <div>Get in touch with me at</div>
-              <input 
-                id='email'
-                name='email'
-                type='email'
-                className='input' 
-                placeholder='Your Email Here'
-              >
-              </input>
-              <div>!</div>
+              <div className='row no-wrap'>
+                <input 
+                  id='email'
+                  name='email'
+                  type='email'
+                  className='input' 
+                  placeholder='Your Email Here'
+                >
+                </input>
+                <div>!</div>
+              </div>
             </div>
           </div>
           <div className="row checkbox-wrapper-65">

@@ -39,12 +39,15 @@ function Footer({GlobalState}) {
         <div className='box'></div>
       </div>
       <div className='copyright-bar row mobile-column'>
-        <div>
-          <Link className='link' to="/">
-            <Translator code={language} value="stanimeros.com"/>
-          </Link>
-        </div>
-        <div>Copyright © 2024</div>
+        <span className='row no-wrap'>
+          <div>
+            <Link className='link' to="/">
+              <Translator code={language} value="stanimeros.com"/>
+            </Link>
+          </div>
+          <div>|</div>
+          <div>Copyright © 2024</div>
+        </span>
         <ul className='row'>
           <li>
             <Link className='link' to="/privacy-policy">

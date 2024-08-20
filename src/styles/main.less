@@ -180,6 +180,8 @@ a.link{
   background-color: var(--clr-input);
   font-family: "GSans";
   border-bottom: 1px solid var(--clr-button-text);
+  width: 100%;
+  max-width: 250px;
 
   &::selection {
     color: var(--clr-background);
@@ -283,11 +285,21 @@ img{
   flex-wrap: wrap;
   align-items: center;
   gap: 10px;
+  box-sizing: border-box;
+  @media screen and (max-width:768px){
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+.no-wrap{
+  flex-wrap: nowrap;
 }
 
 .mobile-column{
   @media screen and (max-width:768px){
     flex-direction: column;
+    gap: 20px;
   }
 }
 
