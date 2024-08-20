@@ -11,7 +11,7 @@ function Footer({GlobalState}) {
       <div className='info-bar row'>
         <div className='row'>
           <div className='circle-image'></div>
-          <div>
+          <div className='column'>
             <div>
               <a href="mailto:hello@stanimeros.com">hello@stanimeros.com</a>
             </div>
@@ -20,14 +20,14 @@ function Footer({GlobalState}) {
             </div>
           </div>
         </div>
-        <div>
+        <div className='column'>
           <div>Mobile & Web Apps</div>
           <div>Software Development</div>
         </div>
-        <div>
+        <div className='column'>
           <div>Thessaloniki, Greece</div>
         </div>
-        <div>
+        <div className='column'>
           <div>Looking for creating an app?</div>
           <strong>
             <div>

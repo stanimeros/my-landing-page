@@ -82,7 +82,7 @@ function Contact({GlobalState}) {
     <>
       <HelmetProvider>
         <Helmet>
-          <title>"Contact"</title>
+          <title>Contact</title>
           <meta property="og:title" content="Contact"/>
         </Helmet>
       </HelmetProvider>
