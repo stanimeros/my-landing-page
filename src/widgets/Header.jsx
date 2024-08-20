@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
-import Translator from './Translator';
 
 function Header({GlobalState}) {
 	const {
@@ -37,24 +36,24 @@ function Header({GlobalState}) {
 			<ul className='row'>
 				<li>
 					<Link className='link' to="/">
-						<Translator code={language} value="Home"/>
+						Home
 					</Link>
 				</li>
 				<div>|</div>
 				<li>
 					<Link className='link' to="/portfolio">
-						<Translator code={language} value="Portfolio"/>
+						Portfolio
 					</Link>
 				</li>
 				<div>|</div>
 				<li>
 					<Link className='link' to="/contact">
-						<Translator code={language} value="Contact"/>
+						Contact
 					</Link>
 				</li>
 			</ul>
 			<Link className="button" to="/contact">
-				<Translator code={language} value="Get Started"/>
+				Get Started
 			</Link>
     </header>
   )

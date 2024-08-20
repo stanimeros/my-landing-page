@@ -30,7 +30,7 @@ function App() {
   const navigate = useNavigate();
   useEffect(() => {
     window.scrollTo({
-      top: 30,
+      top: 10,
       behavior: 'smooth',
     });
   }, [navigate]);

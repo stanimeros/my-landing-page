@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Helmet, HelmetProvider } from 'react-helmet-async'
-import Translator from '../widgets/Translator';
 
 function Page404({GlobalState}) {
   const {
@@ -11,8 +10,8 @@ function Page404({GlobalState}) {
     <>
       <HelmetProvider>
         <Helmet>
-          <title>{Translator({code:language, value:"Page 404"}).props.children}</title>
-          <meta property="og:title" content={Translator({code:language, value:"Page 404"}).props.children} />
+          <title>Page 404</title>
+          <meta property="og:title" content="Page 404" />
         </Helmet>
       </HelmetProvider>
       <main>

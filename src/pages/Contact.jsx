@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { Helmet, HelmetProvider } from 'react-helmet-async'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRightLong } from '@fortawesome/free-solid-svg-icons';
-import Translator from '../widgets/Translator';
 import Toastify from 'toastify-js'
 import "toastify-js/src/toastify.css"
 
@@ -27,7 +26,7 @@ function Contact({GlobalState}) {
     // Validate the form data
     if (!email || !terms) {
       Toastify({
-        text: Translator({code:language, value:"Please fill the email field and accept the terms."}).props.children,
+        text: "Please fill the email field and accept the terms.",
         duration: 3000,
         className: "toast warning",
         gravity: "bottom",
@@ -58,7 +57,7 @@ function Contact({GlobalState}) {
         form.reset();
 
         Toastify({
-          text: Translator({code:language, value: data.message}).props.children,
+          text:  data.message,
           duration: 3000,
           className: "toast success",
           gravity: "bottom",
@@ -70,7 +69,7 @@ function Contact({GlobalState}) {
     } catch (error) {
       console.error('Contact Form:', error);
       Toastify({
-        text: Translator({code:language, value:"Oops! Something didn't go as planned"}).props.children,
+        text: "Oops! Something didn't go as planned",
         duration: 3000,
         className: "toast warning",
         gravity: "bottom",
@@ -83,8 +82,8 @@ function Contact({GlobalState}) {
     <>
       <HelmetProvider>
         <Helmet>
-          <title>{Translator({code:language,value:"Contact"}).props.children}</title>
-          <meta property="og:title" content={Translator({code:language,value:"Contact"}).props.children} />
+          <title>"Contact"</title>
+          <meta property="og:title" content="Contact"/>
         </Helmet>
       </HelmetProvider>
       <main>
@@ -144,15 +143,15 @@ function Contact({GlobalState}) {
                 </svg>
               </span>
               <span>
-                I accept all 
-                <Link className='link' to="/terms-and-conditions">
-                  <Translator code={language} value=" terms and conditions"/>
+                I accept all
+                <Link className='link' to="/terms-and-conditions" target="_blank">
+                  {" terms and conditions"}
                 </Link>
               </span>
             </label>
           </div>
           <button className='button' type="submit">
-            <Translator code={language} value="Send Enquiry"/>
+            Send Enquiry
             <FontAwesomeIcon icon={faArrowRightLong}/>
           </button>
         </form>

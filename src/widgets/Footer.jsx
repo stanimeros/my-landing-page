@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
-import Translator from './Translator';
 
 function Footer({GlobalState}) {
   const {
@@ -9,7 +8,7 @@ function Footer({GlobalState}) {
 
   return (
     <footer>
-      <div className='info-bar row mobile-column'>
+      <div className='info-bar row'>
         <div className='row'>
           <div className='circle-image'></div>
           <div>
@@ -42,7 +41,7 @@ function Footer({GlobalState}) {
         <span className='row no-wrap'>
           <div>
             <Link className='link' to="/">
-              <Translator code={language} value="stanimeros.com"/>
+              stanimeros.com
             </Link>
           </div>
           <div>|</div>
@@ -51,13 +50,13 @@ function Footer({GlobalState}) {
         <ul className='row'>
           <li>
             <Link className='link' to="/privacy-policy">
-              <Translator code={language} value="Privacy Policy"/>
+              Privacy Policy
             </Link>
           </li>
           <div>|</div>
           <li>
             <Link className='link' to="/terms-and-conditions">
-              <Translator code={language} value="Terms & Conditions"/>
+              Terms & Conditions
             </Link>
           </li>
         </ul>

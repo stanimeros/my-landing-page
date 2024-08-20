@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Helmet, HelmetProvider } from 'react-helmet-async'
-import Translator from '../widgets/Translator';
 
 function Home({GlobalState}) {
   const {
@@ -11,8 +10,8 @@ function Home({GlobalState}) {
     <>
       <HelmetProvider>
         <Helmet>
-          <title>{Translator({code:language,value:"Freelancer Developer"}).props.children}</title>
-          <meta property="og:title" content={Translator({code:language,value:"Freelancer Developer"}).props.children} />
+          <title>Freelancer Developer</title>
+          <meta property="og:title" content="Freelancer Developer"/>
         </Helmet>
       </HelmetProvider>
       <main>

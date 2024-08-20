@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Helmet, HelmetProvider } from 'react-helmet-async'
-import Translator from '../widgets/Translator';
 
 function Privacy({GlobalState}) {
   const {
@@ -11,8 +10,8 @@ function Privacy({GlobalState}) {
     <>
       <HelmetProvider>
         <Helmet>
-          <title>{Translator({code:language, value:"Privacy Policy"}).props.children}</title>
-          <meta property="og:title" content={Translator({code:language, value:"Privacy Policy"}).props.children} />
+          <title>Privacy Policy</title>
+          <meta property="og:title" content="Privacy Policy" />
         </Helmet>
       </HelmetProvider>
       <main>

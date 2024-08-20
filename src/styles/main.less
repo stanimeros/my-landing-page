@@ -380,6 +380,15 @@ footer{
     font-size: @--fs-16px;
     justify-content: space-around;
     position: relative;
+    gap: 40px;
+
+    > * {
+      @media only screen and (max-width:768px){
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+      }
+    }
     
     .row{
       gap: 15px;
@@ -415,6 +424,34 @@ footer{
   }
 }
 
+.toast{
+  font-size: @--fs-18px;
+  min-width: 150px;
+  border-radius: 10px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  @media only screen and (max-width:768px){
+      margin-bottom: 55px;
+      margin-right: auto !important;
+      margin-left: auto !important;
+      left: 30px !important;
+      right: 30px !important;
+      max-width: unset !important;
+      text-align: center;
+  }
+}
+
+.toast.warning{
+  background:rgb(199, 37, 37)
+}
+
+.toast.success{
+  background:rgb(67, 199, 37)
+}
+
 /* MAIN CONTENT 
 ==========================================================*/
 main{
@@ -423,6 +460,10 @@ main{
 
   @media screen and (max-width:768px){
     padding: 40px 0 40px 0;
+  }
+
+  p{
+    line-height: 2;
   }
 
   .row{
