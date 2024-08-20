@@ -29,7 +29,7 @@ function Header({GlobalState}) {
   }, [language]);
 
   return (
-    <header className='row'>
+    <header className='row mobile-column'>
       <img
 				src={`/logos/logo-white.png`}
 				width={75}

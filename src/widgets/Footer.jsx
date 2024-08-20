@@ -9,7 +9,7 @@ function Footer({GlobalState}) {
 
   return (
     <footer>
-      <div className='info-bar row'>
+      <div className='info-bar row mobile-column'>
         <div className='row'>
           <div className='circle-image'></div>
           <div>
@@ -38,7 +38,7 @@ function Footer({GlobalState}) {
         </div>
         <div className='box'></div>
       </div>
-      <div className='copyright-bar row'>
+      <div className='copyright-bar row mobile-column'>
         <div>
           <Link className='link' to="/">
             <Translator code={language} value="stanimeros.com"/>

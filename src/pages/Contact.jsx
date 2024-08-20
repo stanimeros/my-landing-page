@@ -58,7 +58,7 @@ function Contact({GlobalState}) {
         form.reset();
 
         Toastify({
-          text: Translator({code:language, value:"Success"}).props.children,
+          text: Translator({code:language, value: data.message}).props.children,
           duration: 3000,
           className: "toast success",
           gravity: "bottom",
@@ -108,8 +108,9 @@ function Contact({GlobalState}) {
                 name='service'
                 className='input dropdown'
                 placeholder='Select Dropdown'
+                defaultValue=''
               >
-                <option value='' disabled selected>Select Dropdown</option>
+                <option value='' disabled>Select Dropdown</option>
                 <option value='cross-platform-app'>Cross Platform App</option>
                 <option value='mobile-app'>Mobile App</option>
                 <option value='ios-app'>iOS App</option>
@@ -132,10 +133,10 @@ function Contact({GlobalState}) {
               <div>!</div>
             </div>
           </div>
-          <div class="row checkbox-wrapper-65">
-            <label for="terms">
+          <div className="row checkbox-wrapper-65">
+            <label htmlFor="terms">
               <input id="terms" type="checkbox"></input>
-              <span class="cbx">
+              <span className="cbx">
                 <svg width="12px" height="11px" viewBox="0 0 12 11">
                   <polyline points="1 6.29411765 4.5 10 11 1"></polyline>
                 </svg>
