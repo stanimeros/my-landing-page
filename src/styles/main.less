@@ -233,7 +233,8 @@ a.link{
   user-select: none;
 }
 .checkbox-wrapper-65 label {
-  display: inline-block;
+  display: flex;
+  align-items: center;
   cursor: pointer;
 }
 .checkbox-wrapper-65 input[type="checkbox"] {
@@ -313,11 +314,11 @@ img{
 .grid{
   margin: 40px 0 40px 0;
   display: grid;
-  gap: 40px;
+  gap: 1.5em;
   grid-template-columns: repeat(4, 1fr); 
 
   @media only screen and (max-width:768px){
-    gap: 20px;
+    gap: 1.25em;
     margin: 20px 0 20px 0;
     grid-template-columns: repeat(2, 1fr); 
   }
@@ -440,7 +441,7 @@ footer{
   align-items: center !important;
   margin-right: 10px;
   margin-bottom: 10px;
-  box-shadow: none;
+  box-shadow: none !important;
   @media only screen and (max-width:768px){
       margin-bottom: 55px;
       margin-right: auto !important;

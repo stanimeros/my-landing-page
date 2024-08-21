@@ -13,10 +13,10 @@ function Footer({GlobalState}) {
           <div className='circle-image'></div>
           <div className='column'>
             <div>
-              <a href="mailto:hello@stanimeros.com">hello@stanimeros.com</a>
+              <a className='link' href="mailto:hello@stanimeros.com">hello@stanimeros.com</a>
             </div>
             <div>
-              <a href="tel:+306980911668">+30 698 091 1668</a>
+              <a className='link' href="tel:+306980911668">+30 698 091 1668</a>
             </div>
           </div>
         </div>
