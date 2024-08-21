@@ -41,7 +41,7 @@ function App() {
           <meta name="description" content="I am a developer"/>
           <meta property="og:description" content="I am a developer"/>
           <meta property="og:type" content='website' />
-          <meta property="og:image" content='/logos/logo.jpg' />
+          <meta property="og:image" content='/logos/logo.png' />
           <meta property='og:site_name' content='Freelancer Developer' />
           <meta property="og:url" content={window.location.href} />
           <link rel="canonical" href={window.location.href.split('?')[0]}></link>

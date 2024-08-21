@@ -9,7 +9,7 @@
                     <body style="font-family:\'Inter\',sans-serif;max-width:600px;margin:0 auto;font-size:14px;line-height:1.4;">
                         <div style="background-color:#f8f8f8cf;border:1px solid #cccccc8d;border-radius:10px;overflow:hidden;margin-top:10px;">					
                             <div style="background-color:#eee9;padding:5px 20px;text-align:center;outline:1px solid #00000010;">
-                                <img height=60 width=60 src="https://stanimeros.com/logos/logo-white.png">
+                                <img height=60 width=60 src="https://stanimeros.com/logos/logo.png">
                             </div>
                             <div style="padding:0 20px;">';
 
