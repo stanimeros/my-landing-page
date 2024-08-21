@@ -172,10 +172,15 @@ a.link{
 }
 
 select {
-  background-color: var(--clr-primary);
-  border-radius: 5px;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
+  border-radius: 15px;
+  option{
+    padding: 5px 10px;
+    background-color: var(--clr-primary);
+    &:hover{
+      cursor: pointer;
+      background-color: var(--clr-button-hover);
+    }
+  }
 }
 
 .input{
