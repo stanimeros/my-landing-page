@@ -4,7 +4,6 @@ import { Routes, Route, useNavigate } from "react-router-dom";
 
 import Header from './widgets/Header';
 import Footer from './widgets/Footer';
-
 import Home from './pages/Home';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';

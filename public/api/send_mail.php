@@ -16,16 +16,11 @@
     $footer = '</div></div><br>
                 <div style="background-color:#f8f8f8;padding:10px 10px;font-size:12px;color:#aaa;max-width:600px;border-radius:10px;">
                     <p style="border-top:1px solid #ccc;padding:20px 0 10px 0;">
-                        You have received this email as you are registered at Reserwave. Use of the service and website is subject to our <a style="color:#aaa" href="https://stanimeros.com/terms-and-conditions">Terms and Conditions</a> and <a style="color:#aaa" href="https://stanimeros.com/privacy-policy">Privacy Policy</a>.
+                        You have received this email as you are registered at stanimeros.com. Use of the service and website is subject to our <a style="color:#aaa" href="https://stanimeros.com/terms-and-conditions">Terms and Conditions</a> and <a style="color:#aaa" href="https://stanimeros.com/privacy-policy">Privacy Policy</a>.
                     </p>
                     <table style="width:100%">
                         <tr>
-                            <td style="color:#aaa;font-size:11px;width:60%;text-align:left;">© 2024 Reserwave - All rights reserved</td>
-                            <td style="width:40%;text-align:center;">
-                                <a style="padding:0 6px;" href="https://www.facebook.com/"><img width=24 src="https://reserwave.com/images/icons/facebook_icon.png"></a>
-                                <a style="padding:0 6px;" href="https://www.instagram.com/reserwave"><img width=24 src="https://reserwave.com/images/icons/instagram_icon.png"></a>
-                                <a style="padding:0 6px;" href="https://twitter.com/"><img width=24 src="https://reserwave.com/images/icons/x_icon.png"></a>
-                            </td>
+                            <td style="color:#aaa;font-size:11px;width:60%;text-align:left;">© 2024 stanimeros.com - All rights reserved</td>
                         </tr>
                     </table>
                 </div>
