@@ -35,6 +35,9 @@ function Contact({GlobalState}) {
       return;
     }
 
+    const loader = document.getElementById('contact-form-loader');
+    loader.classList.remove('hidden');
+
     const formData = {
       name: name,
       service: service,
@@ -75,6 +78,8 @@ function Contact({GlobalState}) {
         gravity: "bottom",
         position: "right",
       }).showToast();
+    } finally {
+      loader.classList.add('hidden');
     }
   };
 
@@ -153,6 +158,7 @@ function Contact({GlobalState}) {
           <button className='button' type="submit">
             Send Enquiry
             <FontAwesomeIcon icon={faArrowRightLong}/>
+            <span id='contact-form-loader' class="loader hidden"></span>
           </button>
         </form>
       </main>
