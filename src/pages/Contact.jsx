@@ -41,6 +41,7 @@ function Contact({GlobalState}) {
         gravity: "bottom",
         position: "right",
       }).showToast();
+      return;
     }
 
     const loader = document.getElementById('contact-form-loader');
