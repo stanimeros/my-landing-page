@@ -24,15 +24,23 @@ function Contact({GlobalState}) {
     const terms = document.getElementById('terms').checked;
 
     // Validate the form data
-    if (!email || !terms) {
+    if (!email) {
       Toastify({
-        text: "Please fill the email field and accept the terms.",
+        text: "Please fill the email field.",
         duration: 3000,
         className: "toast warning",
         gravity: "bottom",
         position: "right",
       }).showToast();
       return;
+    }else if (!terms){
+      Toastify({
+        text: "Please accept the terms.",
+        duration: 3000,
+        className: "toast warning",
+        gravity: "bottom",
+        position: "right",
+      }).showToast();
     }
 
     const loader = document.getElementById('contact-form-loader');

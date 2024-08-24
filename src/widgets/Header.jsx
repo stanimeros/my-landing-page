@@ -31,6 +31,7 @@ function Header({GlobalState}) {
     <header className='row mobile-column'>
       <img
 				src={`/logos/logo-white.png`}
+				alt='logo'
 				width={75}
 			/>
 			<ul className='row'>

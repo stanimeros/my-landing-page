@@ -22,28 +22,28 @@ function Portfolio({GlobalState}) {
         </p>
         <div className='grid'>
           <a href='https://github.com/stanimeros/near-flutter' target='_blank' className='grid-item near'>
-            <img width={500} height={500} src='/images/near-logo.png'/>
+            <img width={400} height={400} alt='near-logo' src='/images/near-logo.png'/>
             <div className='info'>
               <div className='title'>Near</div>
               <div className='description'>Share location with privacy</div>
             </div>
           </a>
           <a href='https://reserwave.stanimeros.com' target='_blank' className='grid-item reserwave'>
-            <img width={500} height={500} src='/images/reserwave-logo.png'/>
+            <img width={400} height={400} alt='reserwave-logo' src='/images/reserwave-logo.png'/>
             <div className='info'>
               <div className='title'>Reserwave</div>
               <div className='description'>Booking system & store search engine</div>
             </div>
           </a>
           <a href='https://apps.apple.com/us/app/meal-ai/id6621269178' target='_blank' className='grid-item meal'>
-            <img width={500} height={500} src='/images/meal-logo.png'/>
+            <img width={400} height={400} alt='meal-logo' src='/images/meal-logo.png'/>
             <div className='info'>
               <div className='title'>Meal AI</div>
               <div className='description'>Food Calorie Tracker</div>
             </div>
           </a>
           <a href='https://github.com/stanimeros' target='_blank' className='grid-item github'>
-            <img width={500} height={500} src='/images/github-logo.png'/>
+            <img width={400} height={400} alt='github-logo' src='/images/github-logo.png'/>
             <div className='info'>
               <div className='title'>Github</div>
               <div className='description'>Visit my github profile</div>
