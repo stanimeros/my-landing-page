@@ -368,6 +368,12 @@ svg{
   gap: 1.5em;
   grid-template-columns: repeat(4, 1fr); 
 
+  @media only screen and (max-width:980px){
+    gap: 2em;
+    margin: 20px 0 20px 0;
+    grid-template-columns: repeat(2, 1fr); 
+  }
+
   @media only screen and (max-width:768px){
     gap: 1.25em;
     margin: 20px 0 20px 0;
@@ -447,8 +453,8 @@ svg{
   justify-content: center;
 
   img{
-    width: 150px !important;
-    height: 150px !important;
+    width: 50% !important;
+    height: 50% !important;
   }
 }
 
@@ -459,8 +465,8 @@ svg{
   justify-content: center;
 
   img{
-    width: 150px !important;
-    height: 150px !important;
+    width: 50% !important;
+    height: 50% !important;
   }
 }
 
