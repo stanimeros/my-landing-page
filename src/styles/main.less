@@ -105,11 +105,16 @@ body{
 }
 
 #root{
-  margin: 3rem;
+  margin: 3rem auto;
   padding: 20px;
+  max-width: 1200px;
   min-height: 75svh;
   border-radius: 20px;
   background: var(--clr-linear-gradient);
+
+  @media only screen and (max-width:1200px){
+    margin: 3rem;
+  }
 
   @media only screen and (max-width:768px){
     margin: 1rem;
@@ -175,6 +180,24 @@ a.link{
   }
 }
 
+.dropdown-wrapper{
+  margin: 0;
+  padding: 0;
+  position: relative;
+
+  select{
+    position: relative;
+    z-index: 1;
+  }
+
+  svg{
+    position: absolute;
+    z-index: 0;
+    right: 0;
+    top: 10px;
+  }
+}
+
 select {
   border-radius: 15px;
   option{
@@ -198,7 +221,6 @@ select {
   background-color: var(--clr-input);
   font-family: "GSans";
   border-bottom: 1px solid var(--clr-button-text);
-  width: 100%;
   max-width: 250px;
 
   &::selection {
@@ -427,7 +449,7 @@ img{
 }
 
 .github{
-  background-color: rgb(160, 160, 120) !important;
+  background-color: #ADA0A6 !important;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -560,7 +582,7 @@ footer{
   
   .info-bar{
     z-index: 0;
-    min-height: 150px;
+    min-height: 130px;
     font-size: @--fs-16px;
     justify-content: space-around;
     position: relative;

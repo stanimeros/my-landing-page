@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Link } from "react-router-dom";
 import { Helmet, HelmetProvider } from 'react-helmet-async'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRightLong } from '@fortawesome/free-solid-svg-icons';
+import { faArrowRightLong, faCaretDown } from '@fortawesome/free-solid-svg-icons';
 import Toastify from 'toastify-js'
 import "toastify-js/src/toastify.css"
 
@@ -107,22 +107,25 @@ function Contact({GlobalState}) {
               >
               </input>
               <div>and I am looking for</div>
-              <select 
-                id='service'
-                name='service'
-                className='input dropdown'
-                placeholder='Select Dropdown'
-                defaultValue=''
-              >
-                <option value='' disabled>Select Dropdown</option>
-                <option value='cross-platform-app'>Cross Platform App</option>
-                <option value='mobile-app'>Mobile App</option>
-                <option value='ios-app'>iOS App</option>
-                <option value='android-app'>Android App</option>
-                <option value='web-app'>Web App</option>
-                <option value='e-shop'>E-shop</option>
-                <option value='website'>Website</option>
-              </select>
+              <div className='dropdown-wrapper'>
+                <select 
+                  id='service'
+                  name='service'
+                  className='input'
+                  placeholder='Select Dropdown'
+                  defaultValue=''
+                >
+                  <option value='' disabled>Select Dropdown</option>
+                  <option value='cross-platform-app'>Cross Platform App</option>
+                  <option value='mobile-app'>Mobile App</option>
+                  <option value='ios-app'>iOS App</option>
+                  <option value='android-app'>Android App</option>
+                  <option value='web-app'>Web App</option>
+                  <option value='e-shop'>E-shop</option>
+                  <option value='website'>Website</option>
+                </select>
+                <FontAwesomeIcon icon={faCaretDown}/>
+              </div>
             </div>
             <div className='row'>
               <div>Get in touch with me at</div>
