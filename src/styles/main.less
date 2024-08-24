@@ -358,6 +358,10 @@ img{
   }
 }
 
+svg{
+  font-size: @--fs-15px;
+}
+
 .grid{
   margin: 40px 0 40px 0;
   display: grid;
@@ -608,17 +612,19 @@ footer{
     }
 
     .box{
-      position: absolute;
-      right: 0;
-      z-index: -1;
       background-color: #2d2d2d;
       border-radius: 20px;
-      width: 210px;
-      height: 100%;
+      padding: 35px;
 
-      @media only screen and (max-width:768px){
-        visibility: hidden;
-      }
+      // position: absolute;
+      // right: 0;
+      // z-index: -1;
+      // width: 210px;
+      // height: 100%;
+
+      // @media only screen and (max-width:768px){
+      //   visibility: hidden;
+      // }
     }
   }
 

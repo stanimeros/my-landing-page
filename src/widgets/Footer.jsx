@@ -27,7 +27,7 @@ function Footer({GlobalState}) {
         <div className='column'>
           <div>Thessaloniki, Greece</div>
         </div>
-        <div className='column'>
+        <div className='column box'>
           <div>Looking for creating an app?</div>
           <strong>
             <div>
@@ -35,7 +35,7 @@ function Footer({GlobalState}) {
             </div>
           </strong>
         </div>
-        <div className='box'></div>
+        {/* <div className='box'></div> */}
       </div>
       <div className='copyright-bar row mobile-column'>
         <span className='row no-wrap'>
