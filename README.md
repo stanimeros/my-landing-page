@@ -11,8 +11,6 @@ This landing page is designed to present a professional and engaging online pres
 - Dynamic Content: Interactive and up-to-date information about my skills, experiences, and projects.
 - Responsive Design: Optimized for all devices, ensuring a seamless experience on desktops, tablets, and smartphones.
 - Project Showcase: Detailed presentations of my completed and ongoing projects with descriptions, images, and links.
-- About Me Section: Insight into my background, interests, and professional objectives.
 - Contact Form: Easy-to-use contact form allowing visitors to reach out directly for inquiries, opportunities, or collaborations.
-- Social Media Integration: Links to my professional social media profiles for more information and networking.
 - Smooth Navigation: Intuitive layout with clear sections and easy navigation throughout the page.
 - SEO Friendly: Structured and optimized content to enhance visibility on search engines.
