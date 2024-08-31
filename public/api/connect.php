@@ -1,21 +1,24 @@
 <?php
-    require("keys.php");
+  // error_reporting(E_ALL);
+  // ini_set('display_errors', 1);
 
-    $servername = "localhost";
-    $dbname = $keys['dbname'];
-    $username = $keys['username'];
-    $password = $keys['password'];
+  require("keys.php");
 
-    if(!isset($_SESSION)) 
-    { 
-        session_start(); 
-    } 
+  $servername = "localhost";
+  $dbname = $keys['dbname'];
+  $username = $keys['username'];
+  $password = $keys['password'];
 
-    $conn = mysqli_connect($servername, $username, $password, $dbname);
+  if(!isset($_SESSION)) 
+  { 
+    session_start(); 
+  } 
 
-    if (!$conn) {
-      die("Error: " . mysqli_connect_error());
-    }
+  $conn = mysqli_connect($servername, $username, $password, $dbname);
 
-    mysqli_set_charset($conn, "utf8");
+  if (!$conn) {
+    die("Error: " . mysqli_connect_error());
+  }
+
+  mysqli_set_charset($conn, "utf8");
 ?>

@@ -56,7 +56,7 @@ function Contact({GlobalState}) {
 
     // Send the form data to the PHP script
     try {
-      const response = await fetch(`/api/submit_form.php`, {
+      const response = await fetch(`${api}/submit_form.php`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

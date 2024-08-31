@@ -34,6 +34,10 @@ function App() {
     });
   }, [navigate]);
 
+  useEffect(() => {
+    fetch(`${api}/track.php`);
+  }, []);
+
   return (
     <>
       <HelmetProvider>
