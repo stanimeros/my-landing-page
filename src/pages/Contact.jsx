@@ -170,7 +170,7 @@ function Contact({GlobalState}) {
           <button className='button' type="submit">
             Send Inquiry
             <FontAwesomeIcon icon={faArrowRightLong}/>
-            <span id='contact-form-loader' class="loader hidden"></span>
+            <span id='contact-form-loader' className="loader hidden"></span>
           </button>
         </form>
       </main>
