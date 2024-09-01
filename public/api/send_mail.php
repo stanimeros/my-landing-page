@@ -49,6 +49,8 @@
     }  
 
     function sendSMTPMail($to, $subject, $header, $content, $footer) {
+        require("keys.php");
+
         if (!file_exists('/home/u321831237/domains/stanimeros.com/public_html/vendor/autoload.php')) {
             return false;
         }
@@ -63,7 +65,7 @@
             $mail->Port = 587;
             $mail->SMTPAuth   = true;
             $mail->Username   = 'hello@stanimeros.com';
-            $mail->Password   = 'rysgep-biwseR-vubdu2';
+            $mail->Password   = $keys['mailPassword'];
             $mail->SMTPSecure = 'tls';
 
             $mail->setFrom('hello@stanimeros.com', 'Stanimeros Pantelis');
