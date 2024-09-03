@@ -125,13 +125,13 @@ function Contact({GlobalState}) {
                   defaultValue=''
                 >
                   <option value='' disabled>Select Dropdown</option>
-                  <option value='cross-platform-app'>Cross Platform App</option>
-                  <option value='mobile-app'>Mobile App</option>
-                  <option value='ios-app'>iOS App</option>
-                  <option value='android-app'>Android App</option>
-                  <option value='web-app'>Web App</option>
-                  <option value='e-shop'>E-shop</option>
-                  <option value='website'>Website</option>
+                  <option value="website">Website Development</option>
+                  <option value="mobile-app">Mobile App Development</option>
+                  <option value="cross-platform">Cross-Platform Development</option>
+                  <option value="eshop">E-Commerce</option>
+                  <option value="collaboration">Collaboration</option>
+                  <option value="partnership">Partnership</option>
+                  <option value="general-inquiry">General Inquiry</option>
                 </select>
                 <FontAwesomeIcon icon={faCaretDown}/>
               </div>
