@@ -20,7 +20,7 @@ function Home({GlobalState}) {
         <strong>Software Developer</strong>
         <br/><br/>
         <p>
-          Hi there! I’m a software developer who loves creating all kinds of apps—web apps, mobile apps, and cross-platform solutions. I enjoy solving problems and making things work smoothly. My goal is to make your experience better and bring a smile to your face with my work. Whether it’s a website or an app, I’m here to help make your ideas come to life!
+          Hello! I'm a software developer who creates web, mobile, and cross-platform applications. I focus on turning ideas into practical, easy-to-use software. My goal is to build efficient solutions that work well for users. Whether you need a website or an app, I'm here to help bring your project to life with quality code and attention to detail.
         </p>
       </main>
     </>
