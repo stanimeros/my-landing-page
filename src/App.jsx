@@ -12,7 +12,6 @@ import TermsAndConditions from './pages/Terms';
 import Page404 from './pages/Page404';
 
 function App() {
-  const [language, setLanguage] = useState(localStorage.getItem('selectedLanguage') || 'EN'); 
   const [theme, setTheme] = useState('dark');
   const [api, setApi] = useState(
     window.location.href.includes('localhost')
@@ -21,7 +20,6 @@ function App() {
   );
   
   const GlobalState = {
-    language, setLanguage,
     theme, setTheme,
     api, setApi
   }
@@ -42,20 +40,15 @@ function App() {
     <>
       <HelmetProvider>
         <Helmet>
-          <meta name="description" content="I am a developer"/>
-          <meta property="og:description" content="I am a developer"/>
+          <meta name="description" content="Experienced software developer specializing in web, mobile, and cross-platform applications. Creating innovative solutions to enhance user experiences."/>
+          <meta property="og:description" content="Experienced software developer specializing in web, mobile, and cross-platform applications. Creating innovative solutions to enhance user experiences."/>
           <meta property="og:type" content='website' />
           <meta property="og:image" content='/logos/logo.png' />
-          <meta property='og:site_name' content='Freelancer Developer' />
+          <meta property='og:site_name' content='Software Developer' />
           <meta property="og:url" content={window.location.href} />
           <link rel="canonical" href={window.location.href.split('?')[0]}></link>
           <meta name="robots" content="index, follow" />
-          {language=='EN' && (
-            <meta http-equiv="Content-Language" content='en-us'/>
-          )}
-          {language=='EL' && (
-            <meta http-equiv="Content-Language" content='el-gr'/>
-          )}
+          <meta http-equiv="Content-Language" content='en-us'/>
         </Helmet>
       </HelmetProvider>
       <Header GlobalState={GlobalState}/>

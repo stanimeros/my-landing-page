@@ -3,7 +3,7 @@ import { Helmet, HelmetProvider } from 'react-helmet-async'
 
 function Home({GlobalState}) {
   const {
-    api, language,
+    api
   } = GlobalState;
 
   return (

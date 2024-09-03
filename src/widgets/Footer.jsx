@@ -2,10 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
 
 function Footer({GlobalState}) {
-  const {
-		language,
-	} = GlobalState;
-
   return (
     <footer>
       <div className='info-bar row'>
@@ -35,7 +31,6 @@ function Footer({GlobalState}) {
             </div>
           </strong>
         </div>
-        {/* <div className='box'></div> */}
       </div>
       <div className='copyright-bar row mobile-column'>
         <span className='row no-wrap'>

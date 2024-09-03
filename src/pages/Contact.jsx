@@ -8,7 +8,7 @@ import "toastify-js/src/toastify.css"
 
 function Contact({GlobalState}) {
   const {
-    api, language,
+    api
   } = GlobalState;
 
   const formRef = useRef(null);
