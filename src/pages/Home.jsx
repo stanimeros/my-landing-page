@@ -10,8 +10,8 @@ function Home({GlobalState}) {
     <>
       <HelmetProvider>
         <Helmet>
-          <title>Freelancer Developer</title>
-          <meta property="og:title" content="Freelancer Developer"/>
+          <title>Stanimeros Pantelis - Software Developer</title>
+          <meta property="og:title" content="Stanimeros Pantelis - Software Developer"/>
         </Helmet>
       </HelmetProvider>
       <main>
