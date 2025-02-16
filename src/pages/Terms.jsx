@@ -1,11 +1,6 @@
-import React, { useState, useEffect } from 'react';
 import { Helmet, HelmetProvider } from 'react-helmet-async'
 
-function Terms({GlobalState}) {
-  const {
-    api
-  } = GlobalState;
-
+function Terms() {
   return (
     <>
       <HelmetProvider>

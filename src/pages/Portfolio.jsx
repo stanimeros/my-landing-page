@@ -1,11 +1,6 @@
-import React, { useState, useEffect } from 'react';
 import { Helmet, HelmetProvider } from 'react-helmet-async'
 
-function Portfolio({GlobalState}) {
-  const {
-    api
-  } = GlobalState;
-
+function Portfolio() {
   return (
     <>
       <HelmetProvider>
@@ -18,9 +13,16 @@ function Portfolio({GlobalState}) {
         <div>/Portfolio</div>
         <h1>This is my Portfolio</h1>
         <p>
-          Here are some of the projects I've worked on, showcasing a range of skills and creativity. Feel free to explore them to get a sense of my work. Please note that many other projects are either private or have been developed for clients, and therefore, I am unable to include them here.
+          Here are some of the projects I&apos;ve worked on, showcasing a range of skills and creativity. Feel free to explore them to get a sense of my work. Please note that many other projects are either private or have been developed for clients, and therefore, I am unable to include them here.
         </p>
         <div className='grid'>
+          <a href='https://ridefa.st' target='_blank' className='grid-item'>
+            <img alt='ridefast-logo' src='/images/ridefast.png'/>
+            <div className='info'>
+              <div className='title'>RideFast</div>
+              <div className='description'>Transport booking form</div>
+            </div>
+          </a>
           <a href='https://github.com/stanimeros/near-flutter' target='_blank' className='grid-item near'>
             <img width={400} height={400} alt='near-logo' src='/images/near-logo.png'/>
             <div className='info'>
@@ -40,13 +42,6 @@ function Portfolio({GlobalState}) {
             <div className='info'>
               <div className='title'>Meal AI</div>
               <div className='description'>Food Calorie Tracker</div>
-            </div>
-          </a>
-          <a href='https://github.com/stanimeros' target='_blank' className='grid-item github'>
-            <img width={400} height={400} alt='github-logo' src='/images/github-logo.png'/>
-            <div className='info'>
-              <div className='title'>Github</div>
-              <div className='description'>Visit my github profile</div>
             </div>
           </a>
         </div>

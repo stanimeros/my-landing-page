@@ -1,12 +1,11 @@
-import React, { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
 
-function Footer({GlobalState}) {
+function Footer() {
   return (
     <footer>
       <div className='info-bar row'>
         <div className='row'>
-          <img width={300} height={300} src="/images/pantelis.jpeg" alt="Pantelis Stanimeros" className='circle-image' />
+          <img width={120} height={120} src="/images/pantelis.jpg" alt="Pantelis Stanimeros" className='circle-image' />
           <div className='column'>
             <div>
               <a className='link' href="mailto:hello@stanimeros.com">hello@stanimeros.com</a>
@@ -40,7 +39,7 @@ function Footer({GlobalState}) {
             </Link>
           </div>
           <div>|</div>
-          <div>Copyright © 2024</div>
+          <div>Copyright © {new Date().getFullYear()}</div>
         </span>
         <ul className='row'>
           <li>

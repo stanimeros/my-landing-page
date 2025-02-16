@@ -1,11 +1,6 @@
-import React, { useState, useEffect } from 'react';
 import { Helmet, HelmetProvider } from 'react-helmet-async'
 
-function Page404({GlobalState}) {
-  const {
-    api
-  } = GlobalState;
-
+function Page404() {
   return (
     <>
       <HelmetProvider>

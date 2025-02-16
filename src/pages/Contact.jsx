@@ -1,4 +1,5 @@
-import React, { useState, useEffect, useRef } from 'react';
+import { useRef } from 'react';
+import PropTypes from 'prop-types';
 import { Link } from "react-router-dom";
 import { Helmet, HelmetProvider } from 'react-helmet-async'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -177,5 +178,11 @@ function Contact({GlobalState}) {
     </>
   )
 }
+
+Contact.propTypes = {
+  GlobalState: PropTypes.shape({
+    api: PropTypes.string.isRequired
+  }).isRequired
+};
 
 export default Contact

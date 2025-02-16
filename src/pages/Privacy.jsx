@@ -1,10 +1,6 @@
-import React, { useState, useEffect } from 'react';
 import { Helmet, HelmetProvider } from 'react-helmet-async'
 
-function Privacy({GlobalState}) {
-  const {
-    api
-  } = GlobalState;
+function Privacy() {
 
   return (
     <>

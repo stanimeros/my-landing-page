@@ -1,11 +1,10 @@
-import React, { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
 
-function Header({GlobalState}) {
+function Header() {
   return (
     <header className='row mobile-column'>
       <img
-				src={`/logos/logo-white.png`}
+				src={`/images/logo-white.png`}
 				alt='logo'
 				width={75}
 			/>
@@ -13,6 +12,12 @@ function Header({GlobalState}) {
 				<li>
 					<Link className='link' to="/">
 						Home
+					</Link>
+				</li>
+				<div>|</div>
+				<li>
+					<Link className='link' to="https://github.com/stanimeros" target="_blank">
+						GitHub
 					</Link>
 				</li>
 				<div>|</div>

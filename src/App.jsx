@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Helmet, HelmetProvider } from 'react-helmet-async'
 import { Routes, Route, useNavigate } from "react-router-dom";
 
@@ -34,7 +34,7 @@ function App() {
 
   useEffect(() => {
     fetch(`${api}/track.php`);
-  }, []);
+  }, [api]);
 
   return (
     <>
@@ -43,12 +43,12 @@ function App() {
           <meta name="description" content="Experienced software developer specializing in web, mobile, and cross-platform applications. Creating innovative solutions to enhance user experiences."/>
           <meta property="og:description" content="Experienced software developer specializing in web, mobile, and cross-platform applications. Creating innovative solutions to enhance user experiences."/>
           <meta property="og:type" content='website' />
-          <meta property="og:image" content='/logos/logo.png' />
+          <meta property="og:image" content='/images/logo.png' />
           <meta property='og:site_name' content='Stanimeros Pantelis - Software Developer' />
           <meta property="og:url" content={window.location.href} />
           <link rel="canonical" href={window.location.href.split('?')[0]}></link>
           <meta name="robots" content="index, follow" />
-          <meta http-equiv="Content-Language" content='en-us'/>
+          <meta httpEquiv="Content-Language" content='en-us'/>
         </Helmet>
       </HelmetProvider>
       <Header GlobalState={GlobalState}/>
