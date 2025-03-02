@@ -9,6 +9,7 @@ import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 import PrivacyPolicy from './pages/Privacy';
 import TermsAndConditions from './pages/Terms';
+import Support from './pages/Support';
 import Page404 from './pages/Page404';
 
 function App() {
@@ -58,6 +59,7 @@ function App() {
         <Route path="contact" element={<Contact GlobalState={GlobalState} />} />
         <Route path="terms-and-conditions" element={<TermsAndConditions GlobalState={GlobalState} />} />
         <Route path="privacy-policy" element={<PrivacyPolicy GlobalState={GlobalState} />} />
+        <Route path="support" element={<Support GlobalState={GlobalState} />} />
         <Route path="404" element={<Page404 GlobalState={GlobalState} />} />
         <Route path="*" element={<Page404 GlobalState={GlobalState} />} />
       </Routes>
