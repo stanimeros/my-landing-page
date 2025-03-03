@@ -23,6 +23,13 @@ function Portfolio() {
               <div className='description'>Transport booking form</div>
             </div>
           </a>
+          <a href='https://e-karotsi.gr' target='_blank' className='grid-item e-karotsi'>
+            <img alt='e-karotsi-logo' src='/images/e-karotsi.png'/>
+            <div className='info'>
+              <div className='title'>e-karotsi</div>
+              <div className='description'>Grocery Delivery Services</div>
+            </div>
+          </a>
           <a href='https://github.com/stanimeros/near-flutter' target='_blank' className='grid-item near'>
             <img width={400} height={400} alt='near-logo' src='/images/near-logo.png'/>
             <div className='info'>
