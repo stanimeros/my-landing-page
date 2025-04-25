@@ -12,6 +12,7 @@ function DeleteAccount() {
       <main className="delete-account">
         <h1>Request Account Deletion</h1>
         <p className="effective-date">Effective Date: 25 April 2025</p>
+        <br/><br/>
 
         <section>
           <h2>How to Request Account Deletion</h2>
@@ -19,6 +20,7 @@ function DeleteAccount() {
             If you wish to delete your account and remove all associated data from our services, please follow the process outlined below.
           </p>
         </section>
+        <br/>
 
         <section>
           <h2>Deletion Process</h2>
@@ -47,6 +49,7 @@ function DeleteAccount() {
             </li>
           </ol>
         </section>
+        <br/>
 
         <section>
           <h2>What Happens After Your Request</h2>
@@ -57,6 +60,7 @@ function DeleteAccount() {
             <li>You will receive a confirmation email once the deletion is complete</li>
           </ul>
         </section>
+        <br/>
 
         <section>
           <h2>Important Notes</h2>
@@ -66,6 +70,7 @@ function DeleteAccount() {
             <li>Deletion may take up to 30 days to complete</li>
           </ul>
         </section>
+        <br/>
 
         <section>
           <h2>Contact Us</h2>
