@@ -1,7 +1,6 @@
 import { Helmet, HelmetProvider } from 'react-helmet-async'
 
 function Privacy() {
-
   return (
     <>
       <HelmetProvider>
@@ -10,20 +9,82 @@ function Privacy() {
           <meta property="og:title" content="Privacy Policy" />
         </Helmet>
       </HelmetProvider>
-      <main>
-      <div>/Our Policy</div>
-      <h1>Privacy Policy</h1>
-      <br/><br/>
-      <p>
-        <span>
-          I’m dedicated to protecting your privacy and ensuring your personal information is safe. When you work with me, I collect only the information necessary to deliver my services and enhance your experience. This may include your name, email address, and any other details you share with me. I will not share your information with third parties without your permission, except as required by law. Rest assured that your data is stored securely and used only for the purposes stated. If you have any questions or concerns about how I handle your information, feel free to reach out to me at 
-        </span>
-        <span> </span>
-        <a className='link' href="mailto:hello@stanimeros.com"> 
-          hello@stanimeros.com
-        </a>
-        <span>.</span>
-      </p>
+      <main className="privacy-policy">
+        <h1>Privacy Policy</h1>
+        <p className="effective-date">Effective Date: 25 April 2025</p>
+
+        <section>
+          <h2>1. Introduction</h2>
+          <p>
+            Welcome to our services. This Privacy Policy explains how we collect, use, and protect your personal information across our website and mobile applications. Your privacy is important to us, and we are committed to protecting your personal data.
+          </p>
+        </section>
+
+        <section>
+          <h2>2. Information We Collect</h2>
+          <h3>Website Information:</h3>
+          <p>
+            When you visit our website, we collect only the information necessary to deliver our services and enhance your experience. This may include your name, email address, and any other details you share with us.
+          </p>
+
+          <h3>Mobile Application Information:</h3>
+          <ul>
+            <li><strong>Account Information:</strong> Name, email address, username, and password</li>
+            <li><strong>Profile Information:</strong> Profile picture, bio, and social media links</li>
+            <li><strong>Content:</strong> Photos, videos, and other media you post</li>
+            <li><strong>Messages:</strong> Content of messages sent and received</li>
+            <li><strong>Usage Data:</strong> Information about how you use the app</li>
+            <li><strong>Location Data:</strong> We access your device's location to provide location-based features and services. This data is used only for the intended functionality and is not shared with third parties without your consent.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>3. How We Use Your Information</h2>
+          <ul>
+            <li>To provide and improve our services</li>
+            <li>To customize your experience</li>
+            <li>To ensure security and prevent fraud</li>
+            <li>To comply with legal obligations</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>4. Sharing Your Information</h2>
+          <p>
+            We do not sell or share your personal information with third parties except as required by law or to provide our services. Your data is stored securely and used only for the purposes stated.
+          </p>
+        </section>
+
+        <section>
+          <h2>5. Data Security</h2>
+          <p>
+            We implement reasonable security measures to protect your personal information from unauthorized access, use, or disclosure. However, no security system is completely secure, and we cannot guarantee absolute security.
+          </p>
+        </section>
+
+        <section>
+          <h2>6. Your Choices</h2>
+          <ul>
+            <li>Update or delete your profile information through account settings</li>
+            <li>Request complete deletion of your personal information at any time</li>
+            <li>Control location data access through your device settings</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>7. Changes to This Privacy Policy</h2>
+          <p>
+            We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy and updating the effective date.
+          </p>
+        </section>
+
+        <section>
+          <h2>8. Contact Us</h2>
+          <p>
+            If you have any questions or concerns about this Privacy Policy or our privacy practices, please contact us at{' '}
+            <a className="link" href="mailto:hello@stanimeros.com">hello@stanimeros.com</a>.
+          </p>
+        </section>
       </main>
     </>
   )

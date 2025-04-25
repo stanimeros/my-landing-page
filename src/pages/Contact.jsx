@@ -162,7 +162,7 @@ function Contact({GlobalState}) {
               </span>
               <span>
                 I accept all
-                <Link className='link' to="/terms-and-conditions" target="_blank">
+                <Link className='link' to="/terms" target="_blank">
                   {" terms and conditions"}
                 </Link>
               </span>

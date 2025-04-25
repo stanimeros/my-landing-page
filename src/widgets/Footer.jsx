@@ -43,13 +43,13 @@ function Footer() {
         </span>
         <ul className='row'>
           <li>
-            <Link className='link' to="/privacy-policy">
+            <Link className='link' to="/privacy">
               Privacy Policy
             </Link>
           </li>
           <div>|</div>
           <li>
-            <Link className='link' to="/terms-and-conditions">
+            <Link className='link' to="/terms">
               Terms & Conditions
             </Link>
           </li>

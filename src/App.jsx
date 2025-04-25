@@ -11,7 +11,7 @@ import PrivacyPolicy from './pages/Privacy';
 import TermsAndConditions from './pages/Terms';
 import Support from './pages/Support';
 import Page404 from './pages/Page404';
-
+import DeleteAccount from './pages/DeleteAccount';
 function App() {
   const [theme, setTheme] = useState('dark');
   const [api, setApi] = useState(
@@ -57,8 +57,9 @@ function App() {
         <Route exact path="/" element={<Home GlobalState={GlobalState} />} />\        <Route path="contact" element={<Contact GlobalState={GlobalState} />} />
         <Route path="portfolio" element={<Portfolio GlobalState={GlobalState} />} />
         <Route path="contact" element={<Contact GlobalState={GlobalState} />} />
-        <Route path="terms-and-conditions" element={<TermsAndConditions GlobalState={GlobalState} />} />
-        <Route path="privacy-policy" element={<PrivacyPolicy GlobalState={GlobalState} />} />
+        <Route path="terms" element={<TermsAndConditions GlobalState={GlobalState} />} />
+        <Route path="privacy" element={<PrivacyPolicy GlobalState={GlobalState} />} />
+        <Route path="delete" element={<DeleteAccount GlobalState={GlobalState} />} />
         <Route path="support" element={<Support GlobalState={GlobalState} />} />
         <Route path="404" element={<Page404 GlobalState={GlobalState} />} />
         <Route path="*" element={<Page404 GlobalState={GlobalState} />} />

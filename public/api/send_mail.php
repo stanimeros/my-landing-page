@@ -16,7 +16,7 @@
     $footer = '</div></div><br>
                 <div style="background-color:#f8f8f8;padding:10px 10px;font-size:12px;color:#aaa;max-width:600px;border-radius:10px;">
                     <p style="border-top:1px solid #ccc;padding:20px 0 10px 0;">
-                        You have received this email as you are registered at stanimeros.com. Use of the service and website is subject to our <a style="color:#aaa" href="https://stanimeros.com/terms-and-conditions">Terms and Conditions</a> and <a style="color:#aaa" href="https://stanimeros.com/privacy-policy">Privacy Policy</a>.
+                        You have received this email as you are registered at stanimeros.com. Use of the service and website is subject to our <a style="color:#aaa" href="https://stanimeros.com/terms">Terms and Conditions</a> and <a style="color:#aaa" href="https://stanimeros.com/privacy">Privacy Policy</a>.
                     </p>
                     <table style="width:100%">
                         <tr>
